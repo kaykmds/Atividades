@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ConversorTemperatura {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Receber a temperatura em Celsius
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        double celsius = scanner.nextDouble();
+
+        // Calcular a temperatura em Fahrenheit
+        double fahrenheit = (celsius * 9 / 5) + 32;
+
+        // Calcular a temperatura em Kelvin
+        double kelvin = celsius + 273.15;
+
+        // Exibir os resultados
+        System.out.println("\nResultados da Conversão:");
+        System.out.printf("%.2f°C é equivalente a:\n", celsius);
+        System.out.printf("%.2f°F (Fahrenheit)\n", fahrenheit);
+        System.out.printf("%.2fK (Kelvin)\n", kelvin);
+    }
+}
