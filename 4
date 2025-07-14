@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CalculoSalario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Receber o salário-base
+        System.out.print("Digite o salário-base: R$ ");
+        double salarioBase = scanner.nextDouble();
+
+        // Receber o percentual de aumento
+        System.out.print("Digite o percentual de aumento (%): ");
+        double percentualAumento = scanner.nextDouble();
+
+        // Calcular o valor do aumento
+        double valorAumento = (salarioBase * percentualAumento) / 100;
+
+        // Calcular o salário final
+        double salarioFinal = salarioBase + valorAumento;
+
+        // Exibir o resultado
+        System.out.printf("Salário-base: R$ %.2f%n", salarioBase);
+        System.out.printf("Percentual de aumento: %.2f%%%n", percentualAumento);
+        System.out.printf("Valor do aumento: R$ %.2f%n", valorAumento);
+        System.out.printf("Salário final: R$ %.2f%n", salarioFinal);
+    }
+}
